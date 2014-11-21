@@ -38,6 +38,17 @@ mean and std are computed across all "Subject" and "Activity" combinations
 "Activity" represents the actual activity done by the subject
 "Subject" is the person "under test"
 
+The transformation performed from the original dataset :
+X_train(test), y_train(test) and subject_train(test) are merged by columns (variables)
+Then train and test are merged by rows (observations)
+Activity variable are looked up with activity_labels.txt
+
+Only the variables containing "mean" and "std" have been kept (on top of Subjet and Activity)
+
+Some cleaning has been done on the variables names (e.g. typo like BodyBody has been replaced with Body).
+
+More details on run_analysis.R
+
 The complete list of variables of each feature vector is :
 
 
